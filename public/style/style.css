@@ -1,0 +1,280 @@
+/* animação de expanção de div */
+@keyframes expandir {
+    0% {
+        width: 20%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #580190 #370058;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #370058;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #370058;
+  border-radius: 20px;
+  border: 3px solid #370058;
+}
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+    background-color: rgb(85, 110, 110);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* negrito */
+    /* Evita barras de rolagem */
+}
+
+.navbar {
+    background-color: #370058 !important;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.principal {
+    flex-grow: 1;
+    display: flex;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+
+    .lateral-esquerda {
+        display: none !important;
+    }
+    
+    .lateral-esquerda {
+      width: 100% !important;
+      height: 100vh !important; /* Ajusta a altura para metade da viewport */
+  }
+
+  #map {
+      width: 100% !important;
+      height: calc(100vh - 56px) !important; /* Ajusta a altura para metade da viewport */
+  }
+
+    .button{
+     /* mostra o botão */
+      display: flex !important;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+    
+    .show{
+      display: flex !important;
+    }
+}
+
+/* configurando botão sobre o mapa */
+.button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #580190;
+  border-radius: 50%;
+  border: 2px solid #370058; /* Define a borda */
+  outline: none !important; /* Remove a borda padrão do botão */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  display: none;
+}
+.button img {
+  width: 24px;
+  height: 24px;
+}
+
+.button:active{
+  border: 2px solid #580190 ; 
+  background-color: #370058;
+}
+
+/* qual solta o mouse */
+
+
+
+.lateral-esquerda {
+    animation-name: expandir;
+    animation-duration: 1s;
+    width: 40%;
+    background-color: #580190;
+    padding: 1rem;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+#map {
+    height: calc(100vh - 56px);
+    width: 60%;
+}
+
+.card {
+    margin: 1rem;
+    width: 50%;
+    height: 40%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation-delay: 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2C3E50;
+  }
+
+/* new changes on card */
+  
+#card {
+  background-color: #370058;
+  border-radius: 10px;
+  box-shadow: 10px 10px #f95353 !important;
+  padding-top: 20px;
+  width: 13rem;
+  height: 15.5rem;
+  text-align: center;
+  margin: 1rem;
+  color: white;
+  animation-delay: 0.3s;
+  padding-left: 1.2rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+.cardHead{
+  height: 7rem;
+}
+
+.card-infos{
+  margin-top: 0px ;
+  margin-bottom: 0px ;
+}
+
+
+  #title {
+    font-size: 13px;
+    color: white;
+  }
+  
+  #subtitle {
+    font-size: 13px;
+    color: #BDC3C7;
+    /* margin-bottom: 2rem; */
+  }
+  
+  #leader, #day, #time {
+    font-size: 12px;
+    /* margin: 0px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #icon-leader, #icon-day, #icon-time {
+    margin-right: 8px;
+  }
+  
+  #cta-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #f95353;
+    /* sombra suave */
+    box-shadow: 0 0 5px #f95353;
+    padding: 10px 20px;
+    font-size: 13px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 8px !important;
+    margin-bottom: 30px;
+    /* animation-delay: 1s; */
+    width: 100%;
+    transition: all .2s ease-in-out;
+    margin-top: auto;
+  }
+  
+  
+  #cta-button:hover {
+    background-color: #62009b;
+    color: white;
+    margin-top: 5px !important;
+    
+  }
+  
+
+  .leaflet-popup-content {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.cardPoint {
+    font-family: "Montserrat", sans-serif !important;
+    background-color: white;
+    width: 260px;
+    text-align: center;
+    border: none;
+}
+
+#h2Point {
+    font-size: 24px;
+    color: #2C3E50;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #7F8C8D;
+}
+
+#pPoint {
+    font-size: 14px;
+    color: #34495E;
+    margin: 6px !important;
+}
+
+.cta-button {
+    background-color: #370058;
+    color: white;
+    border: 2px solid #f95353;
+    /* sombra suave */
+    box-shadow: 0 0 5px #f95353;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* animation-delay: 1s; */
+    width: 80%;
+    transition: all .2s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #62009b;
+    font-size: 17px;
+}
