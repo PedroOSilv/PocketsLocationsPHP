@@ -19,8 +19,10 @@ switch ($request) {
     case '/PocketsLocationsPHP/':
         
         if ($method == 'GET') {
-            $pockets = $pocket->getAll();
+            // $pockets = $pocket->getAll();
+            // echo "GET";
             include_once 'views/index.php'; // Arquivo de visualização
+            echo "GET";
         } else {
         }
         break;
