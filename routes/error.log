@@ -1,0 +1,154 @@
+[24-Oct-2024 21:01:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): include_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:01:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): include_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:03:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:06:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:06:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:06:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:06:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:06:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:06:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(20): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:08:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(21): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:08:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(21): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:08:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(21): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:08:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(22): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:08:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(22): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:08:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(22): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:09:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(23): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:09:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(23): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:09:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(23): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:09:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(23): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:09:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(23): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:09:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(22): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23
+[24-Oct-2024 21:10:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: mysqli object is already closed in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php:23
+Stack trace:
+#0 C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php(23): mysqli->query('SELECT * FROM p...')
+#1 C:\xampp\htdocs\PocketsLocationsPHP\routes\principal.php(22): Pocket->getAll()
+#2 C:\xampp\htdocs\PocketsLocationsPHP\index.php(3): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\PocketsLocationsPHP\models\Pocket.php on line 23

@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $db = 'pocketslocations';
-$user = 'usuario';
-$pass = 'senha';
+$user = 'root';
+$pass = '';
 
 // Conectar ao banco de dados usando mysqli
 $conn = mysqli_connect($host, $user, $pass, $db);

@@ -1,6 +1,6 @@
 <?php
-require_once '../config/dbconnection.php';
-require_once '../models/Pockets.php';
+include_once 'models/Pocket.php';
+include_once 'config/dbconnection.php';
 
 $pocket = new Pocket($conn);
 
@@ -12,13 +12,15 @@ ini_set('log_errors', 1); // Habilitar log de erros
 ini_set('error_log', __DIR__ . '/error.log'); // Definir o arquivo de log de erros
 error_reporting(E_ALL); // Relatar todos os erros
 
+echo "Requisição: $request<br>";
 
 switch ($request) {
 
-    case '/':
+    case '/PocketsLocationsPHP/':
+        
         if ($method == 'GET') {
             $pockets = $pocket->getAll();
-            include '../views/index.php'; // Arquivo de visualização
+            include_once 'views/index.php'; // Arquivo de visualização
         } else {
         }
         break;
@@ -37,4 +39,10 @@ switch ($request) {
             $pocket->create($nome, $descricao, $latitude, $longitude, $lider, $diaDaSemana, $horario, $instagram);
             header("Location: /"); // Redirecionar após adicionar
         }
+        break;
+
+    default:
+        http_response_code(404);
+        echo '404 - Not Found';
+        break;
 }
