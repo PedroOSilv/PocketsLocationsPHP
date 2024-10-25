@@ -4,63 +4,68 @@
 
 
 <div class="principal">
-    <div id="lateral-esquerda" class="d-flex lateral-esquerda">
+    <div id="lateral-esquerda" class="d-flex flex-column lateral-esquerda">
 
         <div class="search-bar">
-            <form action="/PocketsLocationsPHP/buscarEdit" method="POST">
-                <input type="text" class="form-control" name="busca" placeholder="Nome, lider ou descricao">
-                <button type="submit" class="btn btn-primary mt-2">Buscar</button>
+            <form action="/PocketsLocationsPHP/buscarEdit" class="d-flex flex-row" style="width: 90%;" method="POST">
+                <input type="text" class="form-control" id="barra-de-busca" name="busca" placeholder="Nome, lider ou descrição">
+                <button type="submit" class="btn-buscar">
+                    <span class="icon"></span> Buscar
+                </button>
+
             </form>
         </div>
 
-        <?php if (!empty($pockets)): ?>
-            <?php foreach ($pockets as $pocket): ?>
+        <div class="d-flex pockets">
+            <?php if (!empty($pockets)): ?>
+                <?php foreach ($pockets as $pocket): ?>
+                    <div id="card" class="animate__animated animate__fadeIn">
+                        <div class="d-flex flex-column align-items-start">
+                            <div class="cardHead d-flex flex-column align-items-start">
+                                <h2 id="title"><?php echo htmlspecialchars($pocket['nome']); ?></h2>
+                                <p id="subtitle"><?php echo htmlspecialchars($pocket['descricao']); ?></p>
+                            </div>
+                            <p id="leader" class="card-infos">
+                                <img src="public/images/pessoa.png" id="icon-leader">
+                                <?php echo htmlspecialchars($pocket['lider']); ?>
+                            </p>
+                            <p id="day" class="card-infos">
+                                <img src="public/images/ring-calendar.png" id="icon-day">
+                                <?php echo htmlspecialchars($pocket['diaDaSemana']); ?>
+                            </p>
+                            <p id="time" class="card-infos">
+                                <img src="public/images/relogio.png" id="icon-time">
+                                <?php echo htmlspecialchars($pocket['horario']); ?>
+                            </p>
+                        </div>
+
+                        <div class="d-flex mt-1 flex-row">
+                            <form class="mx-1" action="del" method="post">
+                                <input type="hidden" name="id" value="<?= $pocket['id'] ?>">
+                                <button onclick="" class="btn btn-danger">Deletar</button>
+
+                            </form>
+                            <form class="mx-1" action="edit" method="post">
+
+                                <input type="hidden" name="id" value="<?= $pocket['id'] ?>">
+                                <button onclick="" class="btn btn-primary">Editar</button>
+
+                            </form>
+
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
                 <div id="card" class="animate__animated animate__fadeIn">
                     <div class="d-flex flex-column align-items-start">
                         <div class="cardHead d-flex flex-column align-items-start">
-                            <h2 id="title"><?php echo htmlspecialchars($pocket['nome']); ?></h2>
-                            <p id="subtitle"><?php echo htmlspecialchars($pocket['descricao']); ?></p>
+                            <h2 id="title">Nenhum pockets cadastrado</h2>
+                            <p id="subtitle">Crie um pockets para começar a compartilhar conhecimento</p>
                         </div>
-                        <p id="leader" class="card-infos">
-                            <img src="public/images/pessoa.png" id="icon-leader">
-                            <?php echo htmlspecialchars($pocket['lider']); ?>
-                        </p>
-                        <p id="day" class="card-infos">
-                            <img src="public/images/ring-calendar.png" id="icon-day">
-                            <?php echo htmlspecialchars($pocket['diaDaSemana']); ?>
-                        </p>
-                        <p id="time" class="card-infos">
-                            <img src="public/images/relogio.png" id="icon-time">
-                            <?php echo htmlspecialchars($pocket['horario']); ?>
-                        </p>
-                    </div>
-
-                    <div class="d-flex mt-1 flex-row">
-                        <form class="mx-1" action="del" method="post">
-                            <input type="hidden" name="id" value="<?= $pocket['id'] ?>">
-                            <button onclick="" class="btn btn-danger">Deletar</button>
-
-                        </form>
-                        <form class="mx-1" action="edit" method="post">
-
-                            <input type="hidden" name="id" value="<?= $pocket['id'] ?>">
-                            <button onclick="" class="btn btn-primary">Editar</button>
-
-                        </form>
-
                     </div>
                 </div>
-            <?php endforeach; ?>
-        <?php else: ?>
-            <div id="card" class="animate__animated animate__fadeIn">
-                <div class="d-flex flex-column align-items-start">
-                    <div class="cardHead d-flex flex-column align-items-start">
-                        <h2 id="title">Nenhum pockets cadastrado</h2>
-                        <p id="subtitle">Crie um pockets para começar a compartilhar conhecimento</p>
-                    </div>
-                </div>
-            </div>
-        <?php endif; ?>
+            <?php endif; ?>
+        </div>
     </div>
 
     <div id="map" class="flex-grow-1"></div>

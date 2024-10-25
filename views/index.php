@@ -49,7 +49,7 @@
                     <div class="d-flex flex-column align-items-start">
                         <div class="cardHead d-flex flex-column align-items-start">
                             <h2 id="title">Nenhum pockets cadastrado</h2>
-                            <p id="subtitle">Crie um pockets para começar a compartilhar conhecimento</p>
+                            <p id="subtitle">Crie um pockets para começar</p>
                         </div>
                     </div>
                 </div>
