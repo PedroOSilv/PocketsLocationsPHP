@@ -47,8 +47,8 @@
             <div id="card" class="animate__animated animate__fadeIn">
                 <div class="d-flex flex-column align-items-start">
                     <div class="cardHead d-flex flex-column align-items-start">
-                        <h2 id="title">Nenhum bolso cadastrado</h2>
-                        <p id="subtitle">Crie um bolso para começar a compartilhar conhecimento</p>
+                        <h2 id="title">Nenhum pockets cadastrado</h2>
+                        <p id="subtitle">Crie um pockets para começar a compartilhar conhecimento</p>
                     </div>
                 </div>
             </div>
@@ -66,14 +66,10 @@
 
 <script>
     // Definição do ícone de mapa
-    var fireIcon = L.icon({
+    const fireIcon = L.icon({
         iconUrl: 'public/images/fogueira.png',
-        shadowUrl: '',
         iconSize: [32, 32],
-        shadowSize: [50, 64],
-        iconAnchor: [22, 94],
-        shadowAnchor: [4, 62],
-        popupAnchor: [-3, -76]
+        iconAnchor: [16, 31],
     });
 
     <?php if (!empty($pockets)): ?>

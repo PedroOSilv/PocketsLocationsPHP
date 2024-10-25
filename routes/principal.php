@@ -65,7 +65,7 @@ switch ($request) {
         if ($method == 'POST') {
             $id = $_POST['id'];
             $pocket->delete($id);
-            header("Location: /PocketsLocationsPHP/"); // Redirecionar após deletar
+            header("Location: /PocketsLocationsPHP/listaAdmin"); // Redirecionar após deletar
         }
         break;
 
@@ -74,6 +74,23 @@ switch ($request) {
             $id = $_POST['id'];
             $p = $pocket->getById($id);
             include_once 'views/editpockets.php'; // Arquivo de visualização
+        }
+        break;
+
+    case '/PocketsLocationsPHP/update':
+        if ($method == 'POST') {
+            $id = $_POST['id'];
+            $nome = $_POST['nome'];
+            $descricao = $_POST['descricao'];
+            $latitude = $_POST['latitude'];
+            $longitude = $_POST['longitude'];
+            $lider = $_POST['lider'];
+            $diaDaSemana = $_POST['diaDaSemana'];
+            $horario = $_POST['horario'];
+            $instagram = $_POST['instagram'];
+
+            $pocket->update($id, $nome, $descricao, $latitude, $longitude, $lider, $diaDaSemana, $horario, $instagram);
+            header("Location: /PocketsLocationsPHP/listaAdmin"); // Redirecionar após editar
         }
         break;
 

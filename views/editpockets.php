@@ -18,7 +18,9 @@
 <div class="principal">
     <div id="lateral-esquerda" class="d-flex lateral-esquerda ">
         <div class="card-body">
-            <form action="/PocketsLocationsPHP/novo" method="POST">
+            <form action="/PocketsLocationsPHP/update" method="POST">
+                <input type="hidden" name="id" value="<?= $p['id'] ?>">
+
                 <div class="form-group">
                     <label style="color: white;" for="nome">Nome</label>
                     <input value="<?= $nome?>" type="text" class="form-control" id="nome" name="nome" placeholder="Nome do pockets">
@@ -51,7 +53,7 @@
                 <input value="<?= $latitude?>" type="hidden" id="latitude" name="latitude">
                 <input value="<?= $longitude?>" type="hidden" id="longitude" name="longitude">
 
-                <button type="submit" class="btn btn-primary mt-3">Adicionar</button>
+                <button type="submit" class="btn btn-primary mt-3">Salvar</button>
             </form>
         </div>
     </div>

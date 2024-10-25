@@ -5,6 +5,14 @@
 
 <div class="principal">
     <div id="lateral-esquerda" class="d-flex lateral-esquerda">
+
+    <div class="search-bar">
+            <form action="/PocketsLocationsPHP/buscar" method="GET">
+                <input type="text" class="form-control" name="busca" placeholder="Buscar bolsos...">
+                <button type="submit" class="btn btn-primary mt-2">Buscar</button>
+            </form>
+        </div>
+
         <?php if (!empty($pockets)): ?>
             <?php foreach ($pockets as $pocket): ?>
                 <div id="card" class="animate__animated animate__fadeIn">
@@ -55,14 +63,10 @@
 
 <script>
     // Definição do ícone de mapa
-    var fireIcon = L.icon({
+    const fireIcon = L.icon({
         iconUrl: 'public/images/fogueira.png',
-        shadowUrl: '',
         iconSize: [32, 32],
-        shadowSize: [50, 64],
-        iconAnchor: [16, 32],
-        shadowAnchor: [4, 62],
-        popupAnchor: [-3, -76]
+        iconAnchor: [16, 31],
     });
 
     <?php if (!empty($pockets)): ?>
@@ -89,7 +93,7 @@
             ?>
 
             // Criação do marcador no mapa com o ícone de fogueira
-            var marker = L.marker([<?php echo $latitude; ?>, <?php echo $longitude; ?>], { icon: fireIcon }).addTo(map);
+            var marker = L.marker([<?=$latitude; ?>, <?=$longitude; ?>],{ icon: fireIcon }).addTo(map);
             marker.bindPopup(popupContent);
         <?php endforeach; ?>
     <?php endif; ?>

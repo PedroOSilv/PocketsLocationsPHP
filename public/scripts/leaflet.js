@@ -2,9 +2,7 @@
 var map = L.map('map').setView([-19.633079983728564, -51.49301638451956], 4);
 
 // Adiciona uma camada de mapa (OpenStreetMap)
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // Adiciona um marcador ao clicar no mapa
 map.on('click', function(e) {
@@ -17,6 +15,8 @@ map.on('click', function(e) {
     
     var lat = e.latlng.lat;
     var lng = e.latlng.lng;
+
+    console.log("Latitude: " + lat + " Longitude: " + lng);
 
     // Atualiza os campos invisíveis com a latitude e longitude
     if (document.getElementById('latitude') && document.getElementById('longitude')) {
