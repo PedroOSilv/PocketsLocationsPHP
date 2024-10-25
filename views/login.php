@@ -24,7 +24,7 @@
 
     <div id="map" class="flex-grow-1"></div>
 
-    <button id="btn-change" class="button"><img src="public/images/menu-aberto.png"></button>
+    <button id="btn-change" class="button"></button>
 </div>
 
 <script src="public/scripts/leaflet.js"></script>

@@ -71,7 +71,6 @@
     <div id="map" class="flex-grow-1"></div>
 
     <button id="btn-change" class="button">
-        <img src="public/images/menu-aberto.png">
     </button>
 </div>
 

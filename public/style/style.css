@@ -42,6 +42,10 @@ body {
 
 .navbar {
   background-color: #370058 !important;
+  position: fixed; /* Fixa a navbar no topo */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 body,
@@ -54,6 +58,7 @@ html {
 .principal {
   flex-grow: 1;
   display: flex;
+  margin-top: 71px;
 }
 
 /* responsividade */
@@ -65,13 +70,15 @@ html {
 
   .lateral-esquerda {
     width: 100% !important;
-    height: 100vh !important;
+    height: 100% !important;
     /* Ajusta a altura para metade da viewport */
   }
 
   #map {
     width: 100% !important;
-    height: calc(100vh - 56px) !important;
+    height: calc(100vh - 71px)!important;
+    position: relative;
+    z-index: 1
     /* Ajusta a altura para metade da viewport */
   }
 
@@ -87,6 +94,11 @@ html {
   .show {
     display: flex !important;
   }
+
+  .leaflet-top, .leaflet-bottom {
+    z-index: 1001; /* Certifique-se de que os controles do Leaflet estão acima da navbar */
+  }
+
 }
 
 /* configurando botão sobre o mapa */
@@ -133,6 +145,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin-bottom: 10px;
 }
 
 
@@ -154,9 +167,11 @@ html {
   height: 90%;
 }
 
-#map {
-  height: calc(100vh - 56px);
+#map { 
+  height: calc(100vh - 71px)!important;
   width: 60%;
+  position: relative;
+  z-index: 1;
 }
 
 .card {
