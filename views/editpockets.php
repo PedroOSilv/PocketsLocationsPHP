@@ -21,17 +21,17 @@
             <form action="/PocketsLocationsPHP/novo" method="POST">
                 <div class="form-group">
                     <label style="color: white;" for="nome">Nome</label>
-                    <input value="<?= $nome?>" type="text" class="form-control" id="nome" name="nome" placeholder="Nome do bolso">
+                    <input value="<?= $nome?>" type="text" class="form-control" id="nome" name="nome" placeholder="Nome do pockets">
                 </div>
 
                 <div class="form-group mt-3">
                     <label style="color: white;" for="descricao">Descrição</label>
                     <textarea class="form-control" id="descricao" name="descricao" rows="3"
-                        placeholder="Descrição do bolso"><?= $descricao?></textarea>
+                        placeholder="Descrição do pockets"><?= $descricao?></textarea>
                 </div>
                 <div class="form-group mt-3">
                     <label style="color: white;" for="lider">Líder</label>
-                    <input value="<?= $lider?>" type="text" class="form-control" id="lider" name="lider" placeholder="Líder do bolso">
+                    <input value="<?= $lider?>" type="text" class="form-control" id="lider" name="lider" placeholder="Líder do pockets">
                 </div>
                 <div class="form-group mt-3">
                     <label style="color: white;" for="diaDaSemana">Dia da semana</label>
