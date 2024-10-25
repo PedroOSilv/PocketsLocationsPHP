@@ -14,6 +14,10 @@ btnChange.addEventListener('click', function() {
         document.getElementById("lateral-esquerda").classList.remove('hidden');
         statusMap = false;
         console.log('acendeu');
+
+        // muda a imagem de background do botão
+         btnChange.style.backgroundImage = "url('public/images/pin-de-localizacao.png')";
+
     }else{
         document.getElementById('map').classList.add('show');
         document.getElementById('map').classList.remove('hidden');
@@ -22,6 +26,8 @@ btnChange.addEventListener('click', function() {
         document.getElementById("lateral-esquerda").classList.remove('show');
         statusMap = true;
         console.log('apagou');
+
+        btnChange.style.backgroundImage = "url('public/images/menu-aberto.png')";
     }
 
 });

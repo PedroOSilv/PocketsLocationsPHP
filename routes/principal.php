@@ -94,6 +94,22 @@ switch ($request) {
         }
         break;
 
+    case '/PocketsLocationsPHP/buscar':
+        if ($method == 'POST') {
+            $busca = $_POST['busca'];
+            $pockets = $pocket->search($busca);
+            include_once 'views/index.php'; // Arquivo de visualização
+        }
+        break;
+
+    case '/PocketsLocationsPHP/buscarEdit':
+        if ($method == 'POST') {
+            $busca = $_POST['busca'];
+            $pockets = $pocket->search($busca);
+            include_once 'views/listaAdmin.php'; // Arquivo de visualização
+        }
+        break;
+
     default:
         http_response_code(404);
         echo '404 - Not Found';

@@ -62,5 +62,22 @@ class Pocket {
         $stmt->execute();
         $stmt->close();
     }
+
+    // Função para buscar
+    public function search($search) {
+        $sql = "SELECT * FROM {$this->table} WHERE nome LIKE ? OR lider LIKE ? OR descricao LIKE ?";
+        $stmt = $this->conn->prepare($sql);
+        $search = "%$search%";
+        $stmt->bind_param("sss", $search, $search, $search);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $pockets = [];
+
+        while ($row = $result->fetch_assoc()) {
+            $pockets[] = $row;
+        }
+
+        return $pockets;
+    }
 }
 ?>

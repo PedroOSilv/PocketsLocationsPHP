@@ -5,6 +5,14 @@
 
 <div class="principal">
     <div id="lateral-esquerda" class="d-flex lateral-esquerda">
+
+        <div class="search-bar">
+            <form action="/PocketsLocationsPHP/buscarEdit" method="POST">
+                <input type="text" class="form-control" name="busca" placeholder="Nome, lider ou descricao">
+                <button type="submit" class="btn btn-primary mt-2">Buscar</button>
+            </form>
+        </div>
+
         <?php if (!empty($pockets)): ?>
             <?php foreach ($pockets as $pocket): ?>
                 <div id="card" class="animate__animated animate__fadeIn">
