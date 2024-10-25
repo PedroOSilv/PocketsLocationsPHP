@@ -8,7 +8,7 @@
     <title>Pockets</title>
 
     
-    <link rel="shortcut icon" type="image/x-icon" href="images/fogueira.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="public/images/fogueira.png" />
     
 
     <!-- Animate css  -->
@@ -19,7 +19,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- Meu estilo -->
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="public/style/style.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,5 +41,32 @@
     
 </head>
 
+<?php
+    function debug_to_console($data)
+    {
+        $output = $data;
+        if (is_array($output))
+            $output = implode(',', $output);
+        echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+    }
+    
+    include_once 'user/logica-usuario.php';
+    include_once 'user/banco-usuario.php';
+    if (usuarioEstaLogado()) {
+        $email = usuarioLogado();
+        debug_to_console($email);
+        $resultado_user = buscaEmail_user($conn, $email);
+        debug_to_console("Tipo usuario: " . $resultado_user['tipo']);
+        debug_to_console("Id usuario: " . $resultado_user['id_usuario']);
+
+    } else {
+        debug_to_console("Usuário não logado");
+    }
+
+
+    ?>
+
+
 <body>
     
+

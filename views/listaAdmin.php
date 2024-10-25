@@ -27,9 +27,20 @@
                         </p>
                     </div>
 
-                    <a href="https://www.instagram.com/<?php echo htmlspecialchars($pocket['instagram']); ?>">
-                        <button id="cta-button">Quero conhecer</button>
-                    </a>
+                    <div class="d-flex mt-1 flex-row">
+                        <form class="mx-1" action="del" method="post">
+                            <input type="hidden" name="id" value="<?= $pocket['id'] ?>">
+                            <button onclick="" class="btn btn-danger">Deletar</button>
+
+                        </form>
+                        <form class="mx-1" action="edit" method="post">
+
+                            <input type="hidden" name="id" value="<?= $pocket['id'] ?>">
+                            <button onclick="" class="btn btn-primary">Editar</button>
+
+                        </form>
+
+                    </div>
                 </div>
             <?php endforeach; ?>
         <?php else: ?>
@@ -89,7 +100,9 @@
             ?>
 
             // Criação do marcador no mapa com o ícone de fogueira
-            var marker = L.marker([<?php echo $latitude; ?>, <?php echo $longitude; ?>], { icon: fireIcon }).addTo(map);
+            var marker = L.marker([<?php echo $latitude; ?>, <?php echo $longitude; ?>], {
+                icon: fireIcon
+            }).addTo(map);
             marker.bindPopup(popupContent);
         <?php endforeach; ?>
     <?php endif; ?>
