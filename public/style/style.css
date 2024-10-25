@@ -76,7 +76,8 @@ html {
 
   #map {
     width: 100% !important;
-    height: calc(100vh - 71px)!important;
+    /* height: calc(100vh - 71px)!important; */
+    height: 100% !important;
     /* Ajusta a altura para metade da viewport */
   }
 
@@ -166,7 +167,7 @@ html {
 }
 
 #map { 
-  height: calc(100vh - 71px)!important;
+  height: calc(100vh - 71px);
   width: 60%;
   position: relative;
   z-index: 1;
