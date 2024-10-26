@@ -7,9 +7,9 @@
 
     <title>Encontre seu Pockets</title>
 
-    
+
     <link rel="shortcut icon" type="image/x-icon" href="public/images/shabbinha.png" />
-    
+
 
     <!-- Animate css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -34,39 +34,41 @@
     <!-- Inclua o CSS do Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-     <!-- Leaflet JS -->
+    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.1/dist/MarkerCluster.Default.css" />
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.1/dist/leaflet.markercluster.js"></script>
+
+
 </head>
 
 <?php
-    function debug_to_console($data)
-    {
-        $output = $data;
-        if (is_array($output))
-            $output = implode(',', $output);
-        echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
-    }
-    
-    include_once 'user/logica-usuario.php';
-    include_once 'user/banco-usuario.php';
-    if (usuarioEstaLogado()) {
-        $email = usuarioLogado();
-        debug_to_console($email);
-        $resultado_user = buscaEmail_user($conn, $email);
-        debug_to_console("Tipo usuario: " . $resultado_user['tipo']);
-        debug_to_console("Id usuario: " . $resultado_user['id_usuario']);
+function debug_to_console($data)
+{
+    $output = $data;
+    if (is_array($output))
+        $output = implode(',', $output);
+    echo "<script>console.log('Debug Objects: " . $output . "' );</script>";
+}
 
-    } else {
-        debug_to_console("Usuário não logado");
-    }
+include_once 'user/logica-usuario.php';
+include_once 'user/banco-usuario.php';
+if (usuarioEstaLogado()) {
+    $email = usuarioLogado();
+    debug_to_console($email);
+    $resultado_user = buscaEmail_user($conn, $email);
+    debug_to_console("Tipo usuario: " . $resultado_user['tipo']);
+    debug_to_console("Id usuario: " . $resultado_user['id_usuario']);
+} else {
+    debug_to_console("Usuário não logado");
+}
 
 
-    ?>
+?>
 
 
 <body>
-    
-

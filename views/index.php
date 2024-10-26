@@ -73,6 +73,9 @@
         iconAnchor: [16, 31],
     });
 
+    // Criação do grupo de clusters
+    var markers = L.markerClusterGroup();
+
     <?php if (!empty($pockets)): ?>
         <?php foreach ($pockets as $pocket): ?>
             // Criação do conteúdo do popup
@@ -99,10 +102,16 @@
             // Criação do marcador no mapa com o ícone de fogueira
             var marker = L.marker([<?= $latitude; ?>, <?= $longitude; ?>], {
                 icon: fireIcon
-            }).addTo(map);
+            });
             marker.bindPopup(popupContent);
+
+            // Adiciona o marcador ao grupo de clusters
+            markers.addLayer(marker);
         <?php endforeach; ?>
     <?php endif; ?>
+
+    // Adiciona o grupo de clusters ao mapa
+    map.addLayer(markers);
 </script>
 
 
