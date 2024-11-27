@@ -1,6 +1,8 @@
 
 # PocketsLocationsPHP
 
+![Página inicial do projeto](public/images/printPage.png)
+
 Este projeto tem como objetivo exibir todas as reuniões de avivamento **Pockets** pelo Brasil. Ele foi desenvolvido para ser simples e eficiente, utilizando **PHP** para o backend e **MySQL** como banco de dados.
 
 ## 📋 Requisitos
